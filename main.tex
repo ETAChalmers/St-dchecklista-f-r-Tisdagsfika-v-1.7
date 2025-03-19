@@ -1,0 +1,83 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[swedish]{babel}
+\usepackage{amsmath , amssymb , amsthm}
+\usepackage{relsize}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{verbatim}
+\usepackage{pdfpages}
+\newcommand{\HRule}{\rule{\linewidth}{0.1mm}}
+\renewcommand{\baselinestretch}{1.0} 
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\usepackage[margin=0.977in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{cases}
+\usepackage{breqn}
+\usepackage{dirtytalk}
+\usepackage{amsmath}
+\usepackage{natbib}
+\usepackage[nottoc]{tocbibind}
+\usepackage{lipsum, babel}
+\usepackage{wrapfig}
+\usepackage{geometry}
+\usepackage{titlesec}
+ \geometry{
+ a4paper,
+ left=20mm,
+ top=10mm,
+ }
+\usepackage{hyperref}
+%\bibliographystyle{abbrvnat}
+\bibliographystyle{agsm}
+\setcitestyle{authoryear,open={(},close={)}}
+\pagestyle{empty}
+%===================================================
+%   Ovan är importerade packet av diverse slag, för den som vill veta vad 
+%   alla gör/ger är det bara att söka på valfri sökmotor om dessa.
+%   (Blir annars mycket text som ingen av er kommer läsa)
+%===================================================
+\newcommand{\version}{v1.7} %version number
+\newcommand{\titel}{Städchecklista för Tisdagsfika \version} %din titel / rubrik
+\newcommand{\stadrad}{\makebox[\textwidth]{\hspace{5pt}\hrulefill\hspace{5pt}\hrulefill\hspace{5pt}\hrulefill\hspace{5pt}}}
+\newcommand{\stadare}{\vspace{25pt} \stadrad}
+
+\begin{document}
+
+\titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
+\titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+
+\flushright
+\titel\\
+\today
+
+\flushleft
+
+\begin{figure}[h]
+    \includegraphics[scale = 2]{ETA-logga.png}
+\end{figure}
+{\LARGE \textbf{\titel}}         % Rubrik
+\newline
+\noindent\rule{\textwidth}{1pt}                  % Din text
+Städa är ett evigt projekt, därav evigt fika! Har Vice köpt fika?
+\input{arbetspunkter}
+\\
+\centering
+\textbf{Tisdagsfika var utfärdat:}\rule{3cm}{1pt} \textbf{Betygsätt fika:}\rule{3cm}{1pt}\\
+\vspace{5pt}
+\textbf{Dessa människor gjorde tisdagsfikat möjligt:}\\
+
+\stadare
+\stadare
+\stadare
+\stadare
+\stadare
+
+
+\end{document}
